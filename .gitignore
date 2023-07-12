@@ -20,3 +20,34 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# macOS specific files
+.DS_Store
+
+# Editor backup files
+*~
+*.swp
+
+# Build output
+*.log
+*.out
+*.pid
+*.lock
+
+# Testing artifacts
+test-results/
+
+# Configuration files
+config.js
+config.json
+
+# Development tools
+.eslintcache
+webpack-stats.json
+
+# Miscellaneous
+*.bak
+*.tmp
+
+# Ignore nested Git repositories
+**/.git/
