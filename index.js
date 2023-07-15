@@ -19,6 +19,24 @@ mongoose
 // Import the User model
 const User = require('./models/users');
 
+// Hard-coded data
+const users = [
+  {
+    id: 1,
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@example.com',
+    role: 'user',
+  },
+  {
+    id: 2,
+    firstName: 'Jane',
+    lastName: 'Smith',
+    email: 'jane.smith@example.com',
+    role: 'admin',
+  },
+];
+
 // Endpoint: /add-user
 app.post('/add-user', (req, res) => {
   const { firstName, lastName, email, role } = req.body;
