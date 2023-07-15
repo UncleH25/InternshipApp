@@ -121,6 +121,10 @@ app.patch('/edit-user', (req, res) => {
     });
 });
 
+app.get("/:universalURL", (req, res) => {
+  res.send("404 URL NOT FOUND");
+});
+
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
